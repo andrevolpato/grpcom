@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+  <script src="request.js"></script>
+  <title>RPC</title>
+
+  <style>
+  body { 
+    padding-top: 65px;
+  }
+</style>
+
+</head>
+
+
+<body>
+
+  <div class="container">
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="https://g1.globo.com/pr/parana/" target="blank">RPC Curitiba</a>
+      
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="https://github.com/andrevolpato" target="blank">Github <span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Data" aria-label="Data da programação" id="datepicker">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="button" onClick="programacao.btnver()">Ver programação</button>
+      </form>      
+    </nav>
+  </div>
+
+  <div class="container-fluid">
+
+    <p>
+      <div id="results"></div>
+    </p>
+
+    <div id="template" style="display:none">
+        <div class="card mb-1">
+            <div class="row no-gutters">
+              <div class="col-md-2">
+                <img src="" class="card-img" style="width:80px;">
+              </div>
+              <div class="col-md-10">
+                <div class="card-body" style="padding: unset; padding-left:10px; padding-top:10px;">
+                  <h5 class="card-title">_TITLE_</h5>
+                  <p class="card-text">_DESC_</p>
+                  <span class="badge badge-success">_VIVO_</span>
+                  <small class="text-muted">_ITIME_ - _ETIME_</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+
+  </div>
+</body>
+
+<script>
+    //programacao.busca('2020-07-09');
+
+    //alert( $.datepicker.formatDate('yy-mm-dd', new Date()) );
+
+</script>
+
+</html>
