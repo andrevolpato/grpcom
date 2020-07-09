@@ -8,4 +8,4 @@ Frontend: HTML + CSS + jQuery
 Passos para a execução:
 - API: Ir no diretório e rodar o comando #npm run dev
 - Front: Ir no diretório e rodar o webserver #http-server
-- Navegador: Acessar http://localhost:8080/?
+- Navegador: Acessar http://localhost:8080
